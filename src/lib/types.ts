@@ -8,4 +8,6 @@ export type PageProps<TParams extends ParamsType = {}, TSearchParams extends Sea
   searchParams?: TSearchParams;
 }>;
 
-export type LayoutProps<TParams extends ParamsType = {}> = Readonly<{children: React.ReactNode} & Omit<PageProps<TParams, never>, 'searchParams'>>;
+export type LayoutProps<TParams extends ParamsType = {}> = Readonly<
+  { children: React.ReactNode } & Omit<PageProps<TParams, never>, "searchParams">
+>;
